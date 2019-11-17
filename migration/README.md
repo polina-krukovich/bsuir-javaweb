@@ -34,9 +34,10 @@ intended for performing migration operations.
 ## Logging :pencil:
 ***[Log4j](https://logging.apache.org/log4j/2.x/)*** is used for logging 
 to console and file [app.log](https://github.com/polina-krukovich/bsuir-javaweb/blob/master/migration/src/main/resources/app.log).
+
 ![screen console log](https://github.com/polina-krukovich/bsuir-javaweb/blob/master/migration/screenshots/ConsoleLog.png)
 
-##Database structure 
+## Database structure 
 The Pizzeria restaurant database contains information about 
 *menu*, *orders* and *users*. Different types of Database relationships are used, 
 such as ***One-to-many*** and ***Many-to-many***. 
@@ -51,7 +52,7 @@ such as ***One-to-many*** and ***Many-to-many***.
  ```
 SELECT pizzas.id, pizzas.name 
 FROM pizza_sections
-inner JOIN pizzas ON pizzas.section_id = pizza_sections.id
+INNER JOIN pizzas ON pizzas.section_id = pizza_sections.id
 where pizza_sections.name = "Favorite";
 ``` 
 
@@ -62,7 +63,8 @@ Or, to select toppings for *"Pepperoni Blues"* pizza:
  ```
 SELECT toppings.id, toppings.name 
 FROM (toppings, pizzas)
-INNER JOIN (pizza_toppings) ON (pizza_toppings.pizza_id = pizzas.id) AND (pizza_toppings.topping_id = toppings.id)
+INNER JOIN (pizza_toppings) 
+ON (pizza_toppings.pizza_id = pizzas.id) AND (pizza_toppings.topping_id = toppings.id)
 WHERE pizzas.name = "Pepperoni Blues";
 ```
 
