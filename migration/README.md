@@ -63,8 +63,8 @@ Or, to select toppings for *"Pepperoni Blues"* pizza:
  ```
 SELECT toppings.id, toppings.name 
 FROM (toppings, pizzas)
-INNER JOIN (pizza_toppings) 
-ON (pizza_toppings.pizza_id = pizzas.id) AND (pizza_toppings.topping_id = toppings.id)
+INNER JOIN pizza_toppings 
+ON pizza_toppings.pizza_id = pizzas.id AND pizza_toppings.topping_id = toppings.id
 WHERE pizzas.name = "Pepperoni Blues";
 ```
 
