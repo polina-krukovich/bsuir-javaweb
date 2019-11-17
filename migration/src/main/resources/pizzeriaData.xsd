@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="pizzeriaData">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ExtraSections">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="extraSection" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Extras">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="extra" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="weight" type="xsd:int"/>
+                                        <xsd:element name="price" type="xsd:double"/>
+                                        <xsd:element name="sectionId" type="xsd:int"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="PizzaSections">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="pizzaSection" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="priceS" type="xsd:double"/>
+                                        <xsd:element name="priceM" type="xsd:double"/>
+                                        <xsd:element name="priceL" type="xsd:double"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Pizzas">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="pizza" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                        <xsd:element name="weightS" type="xsd:int"/>
+                                        <xsd:element name="weightM" type="xsd:int"/>
+                                        <xsd:element name="weightL" type="xsd:int"/>
+                                        <xsd:element name="sectionId" type="xsd:int"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Toppings">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="topping" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="name" type="xsd:string"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="PizzaToppings">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="pizzaTopping" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="toppingId" type="xsd:int"/>
+                                        <xsd:element name="pizzaId" type="xsd:int"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Orders">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="order" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="dateTime" type="xsd:string"/>
+                                        <xsd:element name="ready" type="xsd:boolean"/>
+                                        <xsd:element name="userId" type="xsd:int"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="OrderedPizzas">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="orderedPizza" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="size">
+                                            <xsd:simpleType>
+                                                <xsd:restriction base="xsd:string">
+                                                    <xsd:enumeration value="SMALL"/>
+                                                    <xsd:enumeration value="MEDIUM"/>
+                                                    <xsd:enumeration value="LARGE"/>
+                                                </xsd:restriction>
+                                            </xsd:simpleType>
+                                        </xsd:element>
+                                        <xsd:element name="count" type="xsd:int"/>
+                                        <xsd:element name="pizzaId" type="xsd:int"/>
+                                        <xsd:element name="orderId" type="xsd:int"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="OrderedExtras">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="orderedExtra" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="count" type="xsd:int"/>
+                                        <xsd:element name="extraId" type="xsd:int"/>
+                                        <xsd:element name="orderId" type="xsd:int"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="Users">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="user" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="login" type="xsd:string"/>
+                                        <xsd:element name="passwordHash" type="xsd:base64Binary"/>
+                                        <xsd:element name="passwordSalt" type="xsd:base64Binary"/>
+                                        <xsd:element name="admin" type="xsd:boolean"/>
+                                    </xsd:sequence>
+                                    <xsd:attribute name="id" type="xsd:int"/>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

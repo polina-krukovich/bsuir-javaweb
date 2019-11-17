@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_221" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>typical neapolitan pizza, made with san marzano tomatoes, mozzarella cheese, fresh basil, salt and extra-virgin olive oil</string>
+    </void>
+    <void property="id">
+     <int>1</int>
+    </void>
+    <void property="name">
+     <string>margheritta</string>
+    </void>
+    <void property="price">
+     <double>8.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>delicious classic pizza with crust and tomato sauce</string>
+    </void>
+    <void property="id">
+     <int>2</int>
+    </void>
+    <void property="name">
+     <string>pepperoni</string>
+    </void>
+    <void property="price">
+     <double>15.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>pizza topped with tomato sauce, cheese, pineapple, and ham</string>
+    </void>
+    <void property="id">
+     <int>3</int>
+    </void>
+    <void property="name">
+     <string>hawaiian</string>
+    </void>
+    <void property="price">
+     <double>13.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>pizza made with tomatoes and mozzarella cheese</string>
+    </void>
+    <void property="id">
+     <int>4</int>
+    </void>
+    <void property="name">
+     <string>neapolitan</string>
+    </void>
+    <void property="price">
+     <double>9.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>thick crusted and rectangular pizza topped with onions, anchovies, tomatoes, herbs and strong cheese</string>
+    </void>
+    <void property="id">
+     <int>5</int>
+    </void>
+    <void property="name">
+     <string>sicilian</string>
+    </void>
+    <void property="price">
+     <double>12.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>single-serving pizza that combines thin crust with toppings from the california cuisine cooking style</string>
+    </void>
+    <void property="id">
+     <int>6</int>
+    </void>
+    <void property="name">
+     <string>california</string>
+    </void>
+    <void property="price">
+     <double>10.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>the pan in which it is baked gives the pizza its high edge which provides ample space for large amounts of cheese and a chunky tomato sauce</string>
+    </void>
+    <void property="id">
+     <int>7</int>
+    </void>
+    <void property="name">
+     <string>chicago</string>
+    </void>
+    <void property="price">
+     <double>18.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>rectangular pizza that has a thick crisp crust and toppings such as pepperoni and mushrooms</string>
+    </void>
+    <void property="id">
+     <int>8</int>
+    </void>
+    <void property="name">
+     <string>detroit</string>
+    </void>
+    <void property="price">
+     <double>20.0</double>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="by.epam.pizzaria.entity.Pizza">
+    <void property="description">
+     <string>it has a crust that is usually chewy and puffy, almost like focaccia bread but not as thick</string>
+    </void>
+    <void property="id">
+     <int>9</int>
+    </void>
+    <void property="name">
+     <string>greek</string>
+    </void>
+    <void property="price">
+     <double>16.0</double>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
