@@ -68,4 +68,4 @@ ON (pizza_toppings.pizza_id = pizzas.id) AND (pizza_toppings.topping_id = toppin
 WHERE pizzas.name = "Pepperoni Blues";
 ```
 
-![Pepperoni Blues toppings](https://github.com/polina-krukovich/bsuir-javaweb/blob/master/migration/screenshots/PepperoniBluesToppings.png)
+![Pepperoni Blues toppings](https://github.com/polina-krukovich/bsuir-javaweb/blob/master/migration/screenshots/PepperoniBlues.png)
