@@ -26,6 +26,6 @@ This is a first lab project - console application using *Layered Architecture* w
 
 ## App screenshots
 
-![screen 1](https://github.com/polina-krukovich/epam-javaweb-pizzeria/blob/master/screenshots/screen1.png)
+![screen 1](https://github.com/polina-krukovich/bsuir-javaweb/blob/master/pizzaria/screenshots/screen1.png)
 
-![screen 2](https://github.com/polina-krukovich/epam-javaweb-pizzeria/blob/master/screenshots/screen2.png)
+![screen 2](https://github.com/polina-krukovich/bsuir-javaweb/blob/master/pizzaria/screenshots/screen2.png)
