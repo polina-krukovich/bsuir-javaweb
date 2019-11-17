@@ -1,7 +1,7 @@
 # Migration :dash:
 > ***Migration*** is a simple Database migration tool intended for ***Pizzeria restaurant***.
 
-##Entities :pizza:
+## Entities :pizza:
 All the entities used in the application inherit from class <code>Entity</code>.
 ```
 - Extra
